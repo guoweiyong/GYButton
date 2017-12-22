@@ -199,6 +199,13 @@
 
 #pragma mark -- 设置属性方法
 
+- (void)setImageCornerRadius:(CGFloat)imageCornerRadius {
+    _imageCornerRadius = imageCornerRadius;
+    self.imageView.layer.cornerRadius = imageCornerRadius;
+    self.imageView.layer.masksToBounds = YES;
+}
+
+
 - (void)setMargin:(CGFloat)margin {
     _margin = margin;
     self.marginHeightCons.constant = margin;

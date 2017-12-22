@@ -72,6 +72,8 @@ typedef NS_ENUM(NSInteger,GYButtonType) {
 /** 设置图片的大小 */ //default CGSize(30,30);
 @property (nonatomic, assign)CGSize imageSize;
 
+/** 单独设置图片的圆角 default 0*/
+@property (nonatomic, assign) CGFloat imageCornerRadius;
 
 - (void)setImage:(UIImage *)image forState:(GYControlState)state;
 - (void)setTitle:(NSString *)title forState:(GYControlState)state;

@@ -22,11 +22,9 @@
     [self verticalTitleImage];
     [self horizontalImageTitle];
     [self horizontalTitleImage];
-    UIButton
 }
 - (void)verticalImageTilte {
     GYButton *btu = [GYButton buttonWithType:GYButtonTypeVerticalImageTitle];
-    
     btu.frame = CGRectMake(50, 50, 200, 100);
     [btu setImage:[UIImage imageNamed:@"P3"] forState:GYControlStateNormal];
     [btu setTitle:@"图片在上" forState:GYControlStateNormal];
